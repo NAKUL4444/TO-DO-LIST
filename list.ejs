@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+<link rel="stylesheet" href="css/styles.css">
+<body>
+<div class="box" id="heading">
+    <h1> <%= d %> </h1>
+</div>
+
+<div class="box">
+        <%  for(var i=0;i<add.length;i++) {  %> 
+        <div class="item">
+        <input type="checkbox">
+            <p> <%= add[i] %> </p>
+        </div>
+        <% } %>
+        <form class="item" action="/" method="post">
+            <input type="text" placeholder ="enter item to add" name="name" autocomplete="off">
+            <button type="submit" name="button">+</button>
+            
+            </form>
+</div>
+
+
+</body>
+</html>
